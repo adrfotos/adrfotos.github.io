@@ -7,10 +7,44 @@
 <script src="http://ajax.googleapis.com/ajax/libs/dojo/1/dojo/dojo.js"></script>
   <meta charset="utf-8">
   <title>Heimteam</title>
+  <style type="text/css">
+
+#hintergrund {
+  position:absolute;
+  width:120px;
+  height:120px;
+  z-index:1;
+}
+#scrollbereich {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  z-index:2;
+}
+
+
+#inhalt {
+  padding:20px 100px 30px 200px;
+  z-index:2;
+}
+
+</style>
+
+  
 </head>
 <body>
+  <div>
+<img id="hintergrund" src="http://www.uhbeo.ch/images/uhc_hoefen_logo.png" alt="" title="" />
+</div>
+
+<div id="scrollbereich">
+<div id="inhalt">
+
 <div id="abstand"></div>
-  <div id="content" style="margin:0 auto;width: 240px;">
+  <div id="content" style="margin:0 auto;position:absolute">
   <h1> Heimteam </h1>
   <p>
   <div class="dropdown">
